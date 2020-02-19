@@ -1,0 +1,8 @@
+#!/bin/bash
+
+res=$(diff "$PWD/$1" "$PWD/$2")
+if [[ $res == "" ]]; then
+	echo 0
+else
+	echo 1
+fi
